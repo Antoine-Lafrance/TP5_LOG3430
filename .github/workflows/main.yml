@@ -24,4 +24,4 @@ jobs:
           sleep 30
       - name: Run locust tests
         run: |
-          locust -f ./locustfile.py --headless -u 10000 -r 100
+          locust -f ./locustfile.py --headless -u 10000 -r 100 -t 2m
