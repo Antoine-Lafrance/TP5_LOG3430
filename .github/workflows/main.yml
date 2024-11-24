@@ -16,9 +16,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip 
-          pipenv run pip install -r .\requirements.txt
+          python -m pip install -r .\requirements.txt
       - name: Start Flask server
         run: |
-          pipenv run python server.py &
+          python server.py &
           echo "Waiting for Flask server to start"
           sleep 30
